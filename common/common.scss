@@ -243,12 +243,9 @@ html {
     left: 0;
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(
-      90deg,
-      var(--tertiary-hover) 0%,
-      var(--tertiary) 100%
-    );
-    clip-path: ellipse(148% 70% at 91% -14%);
+    background-image: url('assets/images/ecofrag_bg.png');
+    background-repeat: no-repeat;
+    object-fit: contain;
   }
 }
 
