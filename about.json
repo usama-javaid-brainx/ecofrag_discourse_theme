@@ -15,7 +15,7 @@
   "color_schemes": {
     "air-light": {
       "primary": "1c1c1c",
-      "secondary": "#FFFFFF",
+      "secondary": "FFFFFF",
       "tertiary": "FFBA08",
       "quaternary": "7e8b93",
       "header_background": "f9fcff",
