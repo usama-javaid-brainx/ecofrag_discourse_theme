@@ -1,4 +1,6 @@
 // custom search banner customizations
+@import url('http://fonts.cdnfonts.com/css/quantico');
+
 .custom-search-banner-wrap {
   display: none;
   //margin: 0 auto !important;
@@ -259,6 +261,7 @@ html {
     object-fit: contain;
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Quantico', sans-serif !important;
   }
 
   .background-container {
@@ -272,7 +275,7 @@ html {
   .btn-primary {
     background: linear-gradient(to right, #FFBA08, #F48C06) !important;
     padding: 10px 30px !important;
-    font-size: 24px;
+    font-size: 15px;
     color: #ffffff;
   }
 }
