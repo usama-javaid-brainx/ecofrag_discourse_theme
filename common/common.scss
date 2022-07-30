@@ -315,11 +315,15 @@ html body #main-outlet {
 }
 
 .nav-pills > li a.active,
-.nav-pills > li > a, .nav-pills > li > a:hover {
+.nav-pills > li > a {
   color: var(--primary);
   background: none;
   font-weight: 600;
   margin-right: 25px;
+}
+
+.nav-pills > li > a:hover {
+  background: var(--quaternary);
 }
 
 .nav-pills > li > a.active {
