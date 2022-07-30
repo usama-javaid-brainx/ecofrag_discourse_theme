@@ -319,7 +319,8 @@ html body #main-outlet {
 }
 
 .nav-pills > li > a:hover {
-  background: var(--quaternary);
+  background: none !important;
+  border-bottom: 5px solid var(--primary) !important;
 }
 
 .nav-pills > li > a.active {
