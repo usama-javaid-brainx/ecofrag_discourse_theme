@@ -1,6 +1,10 @@
 // custom search banner customizations
 @import url('http://fonts.cdnfonts.com/css/quantico');
 
+:root {
+  --d-max-width: 1300px !important;
+}
+
 .custom-search-banner-wrap {
   display: none;
   //margin: 0 auto !important;
@@ -318,10 +322,14 @@ html body #main-outlet {
   margin-right: 25px;
 }
 
-.nav-pills > li > a {
+.nav-pills > li > a.active {
   background: linear-gradient(to left, rgba(255, 186, 8, 1) 0%, rgba(244, 140, 6, 1) 12%, rgba(255, 186, 8, 1) 47%, rgba(244, 140, 6, 1) 100%) left bottom var(--secondary) no-repeat;
   background-size: 100% 5px;
   padding: 0;
+}
+
+.open .grippie {
+  background: linear-gradient(to right, #FFBA08, #F48C06) !important;
 }
 
 // Topic List
