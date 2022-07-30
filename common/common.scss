@@ -319,12 +319,12 @@ html body #main-outlet {
 }
 
 .nav-pills > li > a:hover {
-  background: none !important;
-  border-bottom: 5px solid var(--primary) !important;
+  background-color: var(--primary);
+  color: var(--secondary);
 }
 
 .nav-pills > li > a.active {
-  background: linear-gradient(to left, rgba(255, 186, 8, 1) 0%, rgba(244, 140, 6, 1) 12%, rgba(255, 186, 8, 1) 47%, rgba(244, 140, 6, 1) 100%) left bottom var(--secondary) no-repeat;
+  background: linear-gradient(to left, rgba(255, 186, 8, 1) 0%, rgba(244, 140, 6, 1) 12%, rgba(255, 186, 8, 1) 47%, rgba(244, 140, 6, 1) 100%) left bottom var(--secondary) no-repeat !important;
   background-size: 100% 5px;
   padding: 0;
 }
