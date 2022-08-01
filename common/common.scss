@@ -312,7 +312,7 @@ html body #main-outlet {
 
 .nav-pills > li a.active,
 .nav-pills > li > a {
-  color: var(--primary) !important;
+  color: var(--primary);
   background: none;
   font-weight: 600;
   margin-right: 25px;
@@ -320,13 +320,14 @@ html body #main-outlet {
 
 .nav-pills > li > a:hover {
   background-color: var(--primary);
-  color: var(--secondary) !important;
+  color: var(--secondary);
 }
 
 .nav-pills > li > a.active {
   background: linear-gradient(to left, rgba(255, 186, 8, 1) 0%, rgba(244, 140, 6, 1) 12%, rgba(255, 186, 8, 1) 47%, rgba(244, 140, 6, 1) 100%) left bottom var(--secondary) no-repeat;
   background-size: 100% 5px;
   padding: 0;
+  color: var(--primary) !important;
 }
 
 .open .grippie {
