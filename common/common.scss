@@ -289,7 +289,7 @@ html {
 html body #main-outlet {
   margin-top: 100px;
   margin-bottom: 50px;
-  background: linear-gradient(to right, #0F182D, var(--secondary)) !important;
+  background: linear-gradient(to right, var(--quaternary), var(--secondary)) !important;
   border-radius: 1em;
   padding: 3em 3em 5%;
   max-width: 1250px;
