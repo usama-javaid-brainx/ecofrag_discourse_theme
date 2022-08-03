@@ -289,7 +289,7 @@ html {
 html body #main-outlet {
   margin-top: 100px;
   margin-bottom: 50px;
-  background: var(--secondary);
+  background: linear-gradient(to right, #0F182D, var(--secondary)) !important;
   border-radius: 1em;
   padding: 3em 3em 5%;
   max-width: 1250px;
@@ -616,7 +616,7 @@ html body #main-outlet {
   border-radius: 0.5em;
 }
 
-.nav-item-new {
+.nav-item_new {
   display: none;
 }
 
@@ -630,4 +630,8 @@ html body #main-outlet {
 
 .nav-item_latest {
   order: 2;
+}
+
+.nav-item_unread {
+  order: 3;
 }
