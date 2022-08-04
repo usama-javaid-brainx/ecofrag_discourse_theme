@@ -290,7 +290,7 @@ html {
 html body #main-outlet {
   margin-top: 100px;
   margin-bottom: 50px;
-  background: linear-gradient(to right, var(--quaternary), var(--secondary)) !important;
+  background: var(--secondary);
   border-radius: 1em;
   padding: 3em 3em 5%;
   max-width: 1250px;
@@ -396,7 +396,7 @@ html body #main-outlet {
       width: 100%;
       display: flex;
       margin-bottom: 0.5em;
-      background-color: var(--secondary);
+      background-color: linear-gradient(to right, var(--quaternary) 40%, var(--secondary) 60%) !important;
       border: 1px solid rgba(var(--primary-rgb), 0.2);
       border-radius: 1em;
       position: relative;
@@ -617,11 +617,7 @@ html body #main-outlet {
   border-radius: 0.5em;
 }
 
-.nav-item_new {
-  display: none;
-}
-
-.create-topics-notice {
+.nav-item_new, .create-topics-notice, .nav-item_categories {
   display: none;
 }
 
