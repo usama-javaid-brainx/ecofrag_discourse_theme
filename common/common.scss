@@ -637,3 +637,30 @@ html body #main-outlet {
 .nav-item_unread {
   order: 3;
 }
+
+.topic-map {
+  background: linear-gradient(to right, var(--quaternary) 1%, var(--secondary) 70%) !important;
+  border-radius: 1em;
+  padding: 0;
+  border: 0;
+
+  .topic-map-expanded {
+    border-top: 1px solid var(--primary-low);
+  }
+
+  .section {
+    padding: 10px;
+  }
+
+  .btn, .btn:hover {
+    background-color: var(--secondary);
+    font-size: 10px;
+  }
+}
+
+.topic-footer-main-buttons {
+  .btn-default {
+    padding: 8px 15px;
+    background: var(--primary-low);
+  }
+}
