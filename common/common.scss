@@ -397,7 +397,7 @@ html body #main-outlet {
       width: 100%;
       display: flex;
       margin-bottom: 0.5em;
-      background: linear-gradient(to right, var(--quaternary) 40%, var(--secondary) 60%) !important;
+      background: linear-gradient(to right, var(--quaternary) 1%, var(--secondary) 40%) !important;
       border: 1px solid rgba(var(--primary-rgb), 0.2);
       border-radius: 1em;
       position: relative;
@@ -619,7 +619,7 @@ html body #main-outlet {
 }
 
 .nav-item_new, .create-topics-notice, .nav-item_categories, .category-breadcrumb {
-  display: none;
+  display: none !important;
 }
 
 .nav-item_top {
