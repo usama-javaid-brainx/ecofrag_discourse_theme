@@ -71,6 +71,7 @@
 // Main customizations
 .alert {
   margin: 1em 0;
+  display: none;
 }
 
 #global-notice-alert-emails-disabled {
@@ -257,7 +258,7 @@ html {
     //    rgba(var(--primary-rgb), 0.075) 100%
     //  ),
     //  linear-gradient(0deg, var(--secondary) 100%, var(--secondary) 100%);
-    background-image: url("../images/ecofrag_bg.png");
+    background-image: url("../assets/images/ecofrag_bg.png");
     background-repeat: no-repeat;
     object-fit: contain;
     background-size: cover;
@@ -396,7 +397,7 @@ html body #main-outlet {
       width: 100%;
       display: flex;
       margin-bottom: 0.5em;
-      background-color: linear-gradient(to right, var(--quaternary) 40%, var(--secondary) 60%) !important;
+      background: linear-gradient(to right, var(--quaternary) 40%, var(--secondary) 60%) !important;
       border: 1px solid rgba(var(--primary-rgb), 0.2);
       border-radius: 1em;
       position: relative;
@@ -617,16 +618,16 @@ html body #main-outlet {
   border-radius: 0.5em;
 }
 
-.nav-item_new, .create-topics-notice, .nav-item_categories {
+.nav-item_new, .create-topics-notice, .nav-item_categories, .category-breadcrumb {
   display: none;
 }
 
 .nav-item_top {
-  order: 1;
+  order: 2;
 }
 
 .nav-item_latest {
-  order: 2;
+  order: 1;
 }
 
 .nav-item_unread {
