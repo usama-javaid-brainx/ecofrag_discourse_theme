@@ -1,6 +1,10 @@
 // custom search banner customizations
 @import url('http://fonts.cdnfonts.com/css/quantico');
 
+:root {
+  --d-max-width: 1300px;
+}
+
 .custom-search-banner-wrap {
   display: none;
   //margin: 0 auto !important;
