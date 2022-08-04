@@ -650,9 +650,10 @@ html body #main-outlet {
 
   .section {
     padding: 10px;
+    border: 0;
   }
 
-  .btn, .btn:hover {
+  .buttons .btn, .btn:hover {
     background-color: var(--secondary);
     font-size: 10px;
   }
@@ -660,7 +661,7 @@ html body #main-outlet {
 
 .topic-footer-main-buttons {
   .btn-default {
-    padding: 8px 15px;
-    background: var(--primary-low);
+    padding: 8px 15px !important;
+    background: var(--primary-low) !important;
   }
 }
