@@ -306,7 +306,7 @@ html body #main-outlet {
 
   @media screen and (max-width: 700px) {
     padding: 1.5em;
-    margin-top: 0;
+    margin-top: 50px;
   }
   padding-bottom: 5% !important; //overriding inline style
   @include box-shadow;
