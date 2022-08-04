@@ -12,6 +12,9 @@
   "modifiers": {
     "serialize_topic_excerpts": true
   },
+  "assets": {
+    "texture": "assets/ecofrag_bg.png"
+  },
   "color_schemes": {
     "air-light": {
       "primary": "0D0D0D",
