@@ -402,7 +402,7 @@ html body #main-outlet {
       }
 
       tr {
-        .topic-list-data.num.views {
+        td .num {
           order: 4 !important;
           display: flex;
           justify-content: center;
