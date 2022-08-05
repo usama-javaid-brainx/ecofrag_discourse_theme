@@ -366,7 +366,6 @@ html body #main-outlet {
       border-bottom: none;
 
       .topic-list-data.num.views {
-        display: block;
         order: 0;
       }
     }
@@ -404,8 +403,7 @@ html body #main-outlet {
 
       tr {
         .topic-list-data.num.views {
-          display: block;
-          order: 4;
+          order: 4 !important;
           display: flex;
           justify-content: center;
           align-items: center;
