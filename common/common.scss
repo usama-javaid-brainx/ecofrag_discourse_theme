@@ -393,7 +393,7 @@ html body #main-outlet {
     display: contents;
 
     tr {
-      td .topic-list-data.nums.views {
+      .topic-list-data.nums.views {
         display: flex;
         order: 4 !important;
         justify-content: center;
