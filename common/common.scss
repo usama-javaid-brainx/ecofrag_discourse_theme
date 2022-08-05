@@ -692,12 +692,15 @@ html body #main-outlet {
 
 .custom-category-boxes {
   grid-template-columns: 1fr !important;
-}
 
-.category-logo {
-  width: 20px;
+  .category-box-inner {
 
-  .category-abbreviation {
-    color: transparent;
+    .category-logo {
+      width: 20px !important;
+
+      .category-abbreviation {
+        color: transparent !important;
+      }
+    }
   }
 }
