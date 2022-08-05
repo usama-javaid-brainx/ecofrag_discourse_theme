@@ -365,7 +365,7 @@ html body #main-outlet {
       display: flex;
       border-bottom: none;
 
-      .topic-list-data.num.views {
+      .topic-list-data.views {
         order: 0;
       }
     }
@@ -392,6 +392,15 @@ html body #main-outlet {
   .topic-list-body {
     display: contents;
 
+    tr {
+      td .topic-list-data.nums.views {
+        display: flex;
+        order: 4 !important;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
     .topic-list-item-separator {
       width: 100%;
       margin: 0.75em 0;
@@ -399,15 +408,6 @@ html body #main-outlet {
 
       .topic-list-data {
         width: 100%;
-      }
-
-      tr {
-        td .num {
-          order: 4 !important;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
       }
 
     }
