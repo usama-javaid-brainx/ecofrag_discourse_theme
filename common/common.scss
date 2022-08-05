@@ -695,12 +695,31 @@ html body #main-outlet {
   grid-template-columns: 1fr !important;
 
   .category-box-inner {
+    column-gap: 0;
 
     .category-logo {
       width: 8px !important;
 
       .category-abbreviation {
         color: transparent !important;
+      }
+    }
+
+    .category-detail {
+      align-self: baseline;
+
+      .category-box-heading {
+        padding: 5px 25px;
+        font-size: 20px;
+        background-color: var(--highlight);
+      }
+
+      .description {
+        p {
+
+          font-size: 15px;
+          color: (--primary);
+        }
       }
     }
   }
