@@ -715,3 +715,9 @@ html body #main-outlet {
     background: none !important;
   }
 }
+
+.dark-light-toggle {
+  .slider {
+    display: none;
+  }
+}
