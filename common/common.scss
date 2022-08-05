@@ -364,6 +364,11 @@ html body #main-outlet {
     tr {
       display: flex;
       border-bottom: none;
+
+      .topic-list-data.num.views {
+        display: block;
+        order: 0;
+      }
     }
 
     display: contents;
@@ -396,6 +401,17 @@ html body #main-outlet {
       .topic-list-data {
         width: 100%;
       }
+
+      tr {
+        .topic-list-data.num.views {
+          display: block;
+          order: 4;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
     }
 
     .topic-list-item {
@@ -472,14 +488,6 @@ html body #main-outlet {
       }
     }
   }
-}
-
-.topic-list-data.num.views {
-  display: block;
-  order: 3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .full-width .contents .topic-list .topic-list-item .posters a.latest {
