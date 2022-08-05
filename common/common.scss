@@ -392,15 +392,6 @@ html body #main-outlet {
   .topic-list-body {
     display: contents;
 
-    tr {
-      .topic-list-data.nums.views {
-        display: flex;
-        order: 4 !important;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-
     .topic-list-item-separator {
       width: 100%;
       margin: 0.75em 0;
@@ -477,9 +468,17 @@ html body #main-outlet {
         align-items: center;
       }
 
-      .topic-list-data.age {
+      .topic-list-data.views {
         width: 15%;
         order: 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .topic-list-data.age {
+        width: 15%;
+        order: 5;
         display: flex;
         justify-content: center;
         align-items: center;
