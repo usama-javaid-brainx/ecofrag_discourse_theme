@@ -622,7 +622,7 @@ html body #main-outlet {
   border-radius: 0.5em;
 }
 
-.nav-item_new, .create-topics-notice, .nav-item_categories, .category-breadcrumb {
+.nav-item_new, .create-topics-notice, .category-breadcrumb {
   display: none !important;
 }
 
@@ -636,6 +636,10 @@ html body #main-outlet {
 
 .nav-item_unread {
   order: 3;
+}
+
+.nav-item_categories {
+  order: 4;
 }
 
 .topic-map {
@@ -675,5 +679,25 @@ html body #main-outlet {
     padding: 8px 15px !important;
     background: var(--primary-low) !important;
     color: var(--primary) !important;
+  }
+}
+
+.widget-component-connector {
+  margin-top: 10px;
+}
+
+.nav-stacked a.active {
+  color: var(--primary) !important;
+}
+
+.custom-category-boxes {
+  grid-template-columns: 1fr !important;
+}
+
+.category-logo {
+  width: 20px;
+
+  .category-abbreviation {
+    color: transparent;
   }
 }
