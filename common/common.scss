@@ -695,7 +695,9 @@ html body #main-outlet {
   grid-template-columns: 1fr !important;
 
   a {
+    display: block !important;
     border-radius: 5px !important;
+
     .category-box-inner {
       column-gap: 0 !important;
 
