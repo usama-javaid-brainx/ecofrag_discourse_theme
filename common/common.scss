@@ -319,7 +319,7 @@ html body #main-outlet {
   }
 }
 
-.admin-controls .nav-pills > li a.active, .nav-pills > li a.active,
+.admin-controls .nav-pills > li a, .nav-pills > li a.active,
 .nav-pills > li > a {
   color: var(--primary);
   background: none;
@@ -332,7 +332,7 @@ html body #main-outlet {
   color: var(--secondary);
 }
 
-.nav-pills > li > a.active {
+.admin-controls .nav-pills > li a.active, .nav-pills > li > a.active {
   background: linear-gradient(to left, rgba(255, 186, 8, 1) 0%, rgba(244, 140, 6, 1) 12%, rgba(255, 186, 8, 1) 47%, rgba(244, 140, 6, 1) 100%) left bottom var(--secondary) no-repeat;
   background-size: 100% 5px;
   padding: 0;
