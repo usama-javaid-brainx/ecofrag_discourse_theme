@@ -694,24 +694,31 @@ html body #main-outlet {
 .custom-category-boxes {
   grid-template-columns: 1fr !important;
 
-  .category-box-inner {
-    column-gap: 0 !important;
+  a {
+    border-radius: 5px !important;
+    .category-box-inner {
+      column-gap: 0 !important;
 
-    .category-logo {
-      width: 8px !important;
+      .category-logo {
+        width: 8px !important;
 
-      .category-abbreviation {
-        color: transparent !important;
+        .category-abbreviation {
+          color: transparent !important;
+        }
       }
-    }
 
-    .category-detail {
-      align-self: baseline !important;
+      .category-details {
+        align-self: baseline !important;
 
-      .category-box-heading {
-        padding: 5px 25px !important;
-        font-size: 20px !important;
-        background-color: var(--highlight) !important;
+        .category-box-heading {
+          padding: 5px 25px !important;
+          font-size: 20px !important;
+          background-color: var(--highlight) !important;
+        }
+
+        .description {
+          padding-left: 25px;
+        }
       }
     }
   }
