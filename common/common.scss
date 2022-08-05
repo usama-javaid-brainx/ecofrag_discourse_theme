@@ -711,6 +711,8 @@ html body #main-outlet {
 }
 
 .admin-controls {
+  background: none !important;
+
   nav {
     background: none !important;
   }
@@ -719,5 +721,19 @@ html body #main-outlet {
 .dark-light-toggle {
   .slider {
     display: none;
+  }
+
+  .switch {
+    border: none;
+    width: 35px;
+  }
+
+  .d-icon-sun {
+    display: block !important;
+    color: var(--primary) !important;
+  }
+
+  .d-icon-far-moon {
+    display: none !important;
   }
 }
