@@ -319,7 +319,7 @@ html body #main-outlet {
   }
 }
 
-.nav-pills > li a.active,
+.admin-controls .nav-pills > li a.active, .nav-pills > li a.active,
 .nav-pills > li > a {
   color: var(--primary);
   background: none;
@@ -708,4 +708,8 @@ html body #main-outlet {
 
 .navigation-container {
   border-bottom: 0 !important;
+}
+
+.admin-controls {
+  background-color: transparent !important;
 }
