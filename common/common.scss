@@ -98,9 +98,10 @@
 }
 
 .badge-wrapper.bullet {
+  display: none;
+
   .badge-category-bg {
     border-radius: 0.125em;
-    display: none;
   }
 
   .badge-category-parent-bg {
@@ -703,4 +704,8 @@ html body #main-outlet {
       }
     }
   }
+}
+
+.navigation-container {
+  border-bottom: 0 !important;
 }
