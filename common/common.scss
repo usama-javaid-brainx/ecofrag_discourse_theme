@@ -697,7 +697,7 @@ html body #main-outlet {
   .category-box-inner {
 
     .category-logo {
-      width: 20px !important;
+      width: 8px !important;
 
       .category-abbreviation {
         color: transparent !important;
@@ -711,5 +711,7 @@ html body #main-outlet {
 }
 
 .admin-controls {
-  background-color: transparent !important;
+  nav {
+    background: none !important;
+  }
 }
