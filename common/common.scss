@@ -687,7 +687,7 @@ html body #main-outlet {
 }
 
 .topic-footer-main-buttons {
-  .btn-default {
+  .btn-default, .btn-default:hover {
     padding: 8px 15px !important;
     background: var(--primary-low) !important;
     color: var(--primary) !important;
