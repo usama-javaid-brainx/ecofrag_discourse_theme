@@ -98,7 +98,6 @@
 }
 
 .badge-wrapper.bullet {
-  display: none;
 
   .badge-category-bg {
     border-radius: 0.125em;
@@ -114,6 +113,12 @@
       border-top-right-radius: 0.125em;
       border-bottom-right-radius: 0.125em;
     }
+  }
+}
+
+.link-bottom-line {
+  .badge-wrapper.bullet {
+    display: none;
   }
 }
 
