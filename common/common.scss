@@ -293,7 +293,7 @@ html {
     font-weight: 600;
 
     .d-icon {
-      color: #ffffff !important;
+      color: #ffffff;
     }
   }
 }
@@ -691,6 +691,10 @@ html body #main-outlet {
     padding: 8px 15px !important;
     background: var(--primary-low) !important;
     color: var(--primary) !important;
+
+    .d-icon {
+      color: var(--primary);
+    }
   }
 }
 
@@ -700,6 +704,10 @@ html body #main-outlet {
 
 .nav-stacked a.active {
   color: var(--primary) !important;
+}
+
+.nav-stacked a.active::after {
+  border-left-color: var(--primary);
 }
 
 .custom-category-boxes {
