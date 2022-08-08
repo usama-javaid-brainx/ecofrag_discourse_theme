@@ -713,6 +713,10 @@ html body #main-outlet {
 .custom-category-boxes {
   grid-template-columns: 1fr !important;
 
+  .category-box {
+    max-height: fit-content !important;
+  }
+
   .subcategories {
     display: flex !important;
     flex-wrap: wrap;
