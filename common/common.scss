@@ -720,11 +720,7 @@ html body #main-outlet {
   grid-template-columns: 1fr !important;
 
   .subcategories {
-    display: block;
-
-    a {
-      display: flex !important;
-    }
+    display: block !important;
 
     .subcategory {
       padding-left: 25px;
