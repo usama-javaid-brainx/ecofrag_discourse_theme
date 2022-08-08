@@ -1,4 +1,7 @@
 <div class="background-container"></div>
-<script type="text/x-handlebars" data-template-name="/connectors/below-category-title-link/foobar2">
-  <div style="height: 25px; width: 25px;background: red"></div>
+<script type="text/x-handlebars" data-template-name="/connectors/category-title-before/foobar2">
+  <div style="height: 25px; width: 25px;background: red">
+  <a class="category-title-link" href={{this.category.url}}>
+  <PluginOutlet @name="below-category-title-link" @connectorTagName="div" @args={{hash category=this.category}} />
+  </div>
 </script>
