@@ -730,6 +730,17 @@ html body #main-outlet {
         height: 60px !important;
         width: 60px !important;
       }
+
+      .badge-category-bg {
+        display: none;
+      }
+
+      .badge-category {
+        .category-name {
+          font-size: 18px;
+          color: var(--primary);
+        }
+      }
     }
   }
 
@@ -742,6 +753,7 @@ html body #main-outlet {
 
       .category-logo {
         width: 8px !important;
+        height: 100% !important;
 
         .category-abbreviation {
           color: transparent !important;
