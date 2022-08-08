@@ -298,12 +298,6 @@ html {
   }
 }
 
-.btn-primary {
-  .d-icon {
-    color: #ffffff !important;
-  }
-}
-
 html body #main-outlet {
   margin-top: 100px;
   margin-bottom: 50px;
@@ -721,10 +715,12 @@ html body #main-outlet {
 
   .subcategories {
     display: flex !important;
+    flex-wrap: wrap;
+    flex-direction: column;
 
     .subcategory {
+      margin-bottom: 15px;
       display: flex !important;
-      flex-wrap: wrap;
       padding-left: 25px;
 
       .subcategory-image-placeholder .aspect-image img {
@@ -750,7 +746,7 @@ html body #main-outlet {
   }
 
   a:hover {
-    background: none;
+    background: none !important;
   }
 
   a {
