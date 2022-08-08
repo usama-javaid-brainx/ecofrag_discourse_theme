@@ -727,11 +727,16 @@ html body #main-outlet {
       display: flex !important;
       padding-left: 25px;
 
-      .subcategory-image-placeholder .aspect-image img {
+      .subcategory-image-placeholder {
         height: 50px !important;
         width: 50px !important;
-        border-radius: 5px;
         margin-right: 15px;
+
+        .aspect-image img {
+          height: 100%;
+          width: 100%;
+          border-radius: 5px;
+        }
       }
 
       .badge-category-bg {
