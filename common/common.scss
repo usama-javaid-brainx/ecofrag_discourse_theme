@@ -769,7 +769,6 @@ html body #main-outlet {
   }
 
   a {
-    font-family: 'Quantico', sans-serif !important;
     display: block !important;
     border-radius: 5px !important;
 
@@ -802,6 +801,10 @@ html body #main-outlet {
           display: none !important;
         }
       }
+    }
+
+    h3 {
+      font-family: 'Quantico', sans-serif !important;
     }
   }
 }
