@@ -720,9 +720,10 @@ html body #main-outlet {
   grid-template-columns: 1fr !important;
 
   .subcategories {
-    display: block !important;
+    display: flex !important;
 
     .subcategory {
+      display: flex !important;
       padding-left: 25px;
 
       .subcategory-image-placeholder .aspect-image img {
@@ -733,7 +734,7 @@ html body #main-outlet {
   }
 
   a {
-    display: block;
+    display: block !important;
     border-radius: 5px !important;
 
     .category-box-inner {
