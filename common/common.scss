@@ -241,7 +241,7 @@ div.ac-wrap {
 }
 
 .unread-high-priority-notifications {
-  background: var(--quaternary);
+  //background: var(--quaternary);
 }
 
 .timeline-container .topic-timeline .timeline-handle {
@@ -856,4 +856,8 @@ html body #main-outlet {
     border-radius: 5px;
   }
 
+}
+
+.badge-notification {
+  color: #ffffff !important;
 }
