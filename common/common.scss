@@ -710,8 +710,18 @@ html body #main-outlet {
   border-left-color: var(--primary);
 }
 
+.list-area{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+
+  .custom-category-boxes-container:before{
+    content: 'Caegories';
+    color: var(--primary);
+    font-size: 14px;
+  }
 .custom-category-boxes {
-  grid-template-columns: 1fr !important;
+  //grid-template-columns: 1fr !important;
 
   .category-box {
     max-height: fit-content !important;
@@ -731,11 +741,12 @@ html body #main-outlet {
       border-radius: 0 !important;
       display: flex !important;
       padding-left: 25px;
+      align-items: center;
 
       .subcategory-image-placeholder {
-        height: 50px !important;
-        width: 50px !important;
-        margin-right: 15px !important;
+        height: 45px !important;
+        width: 45px !important;
+        margin-right: 20px !important;
 
         .aspect-image {
           height: 100%;
@@ -792,15 +803,57 @@ html body #main-outlet {
       .category-details {
         align-self: baseline !important;
 
+
+
+
+
+
+
+
+
+
+
+
+
         .category-box-heading {
-          padding: 5px 25px !important;
+          padding: 0 25px 55px 24px !important;
           font-size: 20px !important;
-          background-color: var(--highlight) !important;
+          background-color: var(--quaternary);
+        }
+        .description{
+          position: absolute;
+          top: 35px;
+          left: 33px;
+          font-size: 14px;
         }
 
-        .description {
-          display: none !important;
-        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //.category-box-heading {
+        //  padding: 5px 25px !important;
+        //  font-size: 20px !important;
+        //  background-color: var(--highlight) !important;
+        //}
+        //
+        //.description {
+        //  display: none !important;
+        //}
       }
     }
 
@@ -809,7 +862,7 @@ html body #main-outlet {
     }
   }
 }
-
+}
 .navigation-container {
   border-bottom: 0 !important;
 }
@@ -860,4 +913,17 @@ html body #main-outlet {
 
 .badge-notification {
   color: #ffffff !important;
+}
+
+// For making new design
+.categories-and-latest{
+  .column{
+    margin-top: 0;
+
+    .table-heading{
+      border-bottom: none !important;
+      color: var(--primary) !important;
+      padding: 15px 0 3px 15px !important;
+  }
+  }
 }
