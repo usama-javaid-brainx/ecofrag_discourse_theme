@@ -14,10 +14,11 @@
 <!--    </script>-->
 <!--</script>-->
 <script>
-  document.addEventListener('DOMContentLoaded', addSectionGrid);
-  document.addEventListener('click', addSectionGrid);
+  document.addEventListener('DOMContentLoaded', addSectionGrid,false);
+  document.addEventListener('click', addSectionGrid,false);
 
   function addSectionGrid() {
+    debugger
     let customCategoryCard = document.getElementsByClassName('above-discovery-categories-outlet')[0];
     if (customCategoryCard) {
       customCategoryCard.parentElement.classList.add('list-area-section');
