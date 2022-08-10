@@ -14,19 +14,15 @@
 <!--    </script>-->
 <!--</script>-->
 <script>
-  debugger
-  document.getElementById('list-area').classList.remove('list-area-section');
-  document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('DOMContentLoaded', addSectionGrid);
+  document.addEventListener('click', addSectionGrid);
+
+  function addSectionGrid() {
     let customCategoryCard = document.getElementsByClassName('above-discovery-categories-outlet')[0];
-    debugger
-    if (customCategoryCard){
+    if (customCategoryCard) {
       customCategoryCard.parentElement.classList.add('list-area-section');
-    }
-    else {
+    } else {
       customCategoryCard.parentElement.classList.remove('list-area-section');
     }
-  });
-
-
-
+  }
 </script>
