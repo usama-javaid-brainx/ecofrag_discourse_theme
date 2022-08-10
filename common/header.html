@@ -14,11 +14,14 @@
 <!--    </script>-->
 <!--</script>-->
 <script>
+  document.getElementById('list-area').parentElement.classList.remove('list-area-section');
   document.addEventListener('DOMContentLoaded', () => {
-    debugger
     let customCategoryCard = document.getElementsByClassName('above-discovery-categories-outlet')[0];
-    if (!customCategoryCard){
+    if (customCategoryCard){
       customCategoryCard.parentElement.classList.add('list-area-section');
+    }
+    else {
+      customCategoryCard.parentElement.classList.remove('list-area-section');
     }
   });
 
