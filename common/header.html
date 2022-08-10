@@ -1,6 +1,5 @@
 <div class="background-container"></div>
 
-
 <!--<script type="text/x-handlebars" data-template-name="/connectors/category-box-below-each-category/foobar">-->
 <!--&lt;!&ndash;  <div class="sub-category-tag-list">&ndash;&gt;-->
 <!--&lt;!&ndash;  {{#each this.category.subcategories as |c|}}&ndash;&gt;-->
@@ -14,3 +13,10 @@
 
 <!--    </script>-->
 <!--</script>-->
+<script>
+  debugger
+    let customCategoryCard = document.getElementsByClassName('above-discovery-categories-outlet')[0];
+    if (!customCategoryCard){
+     customCategoryCard.parentElement.classList.add('list-area-section');
+    }
+</script>
