@@ -6,3 +6,7 @@ export default apiInitializer("0.8", (api) => {
     expandPinned: true,
   });
 });
+let customCategoryCard = document.getElementsByClassName('above-discovery-categories-outlet')[0];
+if (!customCategoryCard){
+  customCategoryCard.parentElement.classList.add('list-area-section');
+}
