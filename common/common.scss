@@ -710,7 +710,7 @@ html body #main-outlet {
   border-left-color: var(--primary);
 }
 
-.list-area{
+#list-area{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
