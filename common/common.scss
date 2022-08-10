@@ -716,9 +716,10 @@ html body #main-outlet {
   grid-gap: 20px;
 
   .custom-category-boxes-container:before{
-    content: 'Caegories';
+    content: 'Categories';
     color: var(--primary);
     font-size: 14px;
+    margin-top: 10px;
   }
 .custom-category-boxes {
   grid-template-columns: 1fr !important;
@@ -918,8 +919,8 @@ html body #main-outlet {
 // For making new design
 .categories-and-latest{
   .column{
-    margin-top: 0;
-
+    margin-top: 0 !important;
+    background: linear-gradient(to right, var(--quaternary) 1%, var(--secondary) 70%) !important;
     .table-heading{
       border-bottom: none !important;
       color: var(--primary) !important;
