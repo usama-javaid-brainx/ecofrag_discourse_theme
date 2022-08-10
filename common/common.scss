@@ -817,13 +817,13 @@ html body #main-outlet {
 
 
         .category-box-heading {
-          padding: 0 25px 55px 24px !important;
+          padding: 5px 25px 55px 24px !important;
           font-size: 20px !important;
           background-color: var(--quaternary);
         }
         .description{
           position: absolute;
-          top: 35px;
+          top: 40px;
           left: 33px;
           font-size: 14px;
         }
@@ -919,12 +919,13 @@ html body #main-outlet {
 // For making new design
 .categories-and-latest{
   .column{
-    margin-top: 0 !important;
+    margin-top: -13px !important;
     background: linear-gradient(to right, var(--quaternary) 1%, var(--secondary) 70%) !important;
     .table-heading{
       border-bottom: none !important;
       color: var(--primary) !important;
-      padding: 15px 0 3px 15px !important;
+      padding: 15px 0 7px 15px !important;
+      background: var(--secondary) !important;
   }
   }
 }
