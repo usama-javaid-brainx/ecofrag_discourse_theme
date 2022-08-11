@@ -1,35 +1,34 @@
 <div class="background-container"></div>
 
-<!--<script type="text/x-handlebars" data-template-name="/connectors/category-box-below-each-category/foobar">-->
-<!--&lt;!&ndash;  <div class="sub-category-tag-list">&ndash;&gt;-->
-<!--&lt;!&ndash;  {{#each this.category.subcategories as |c|}}&ndash;&gt;-->
-<!--&lt;!&ndash;    <span class="tag">Welcome {{currentUser.username}}. Please visit <a class="nav-link " href="http://google.com" target="_blank">{{c.name}}</a>&ndash;&gt;-->
-<!--&lt;!&ndash;    </span>&ndash;&gt;-->
-<!--&lt;!&ndash;  {{/each}}&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;  <span class="tag">Welcome {{currentUser.username}}. Please visit <a class="nav-link " href="http://google.com" target="_blank">{{category.name}}</a>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;&lt;!&ndash;</span>&ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;  </div>&ndash;&gt;-->
-<!--<script>-->
+<script type="text/x-handlebars" data-template-name="/connectors/category-box-before-each-box/foobar">
+<!--  <div class="sub-category-tag-list">-->
+<!--  {{#each this.category.subcategories as |c|}}-->
+<!--    <span class="tag">Welcome {{currentUser.username}}. Please visit <a class="nav-link " href="http://google.com" target="_blank">{{c.name}}</a>-->
+<!--    </span>-->
+<!--  {{/each}}-->
+<!--&lt;!&ndash;  <span class="tag">Welcome {{currentUser.username}}. Please visit <a class="nav-link " href="http://google.com" target="_blank">{{category.name}}</a>&ndash;&gt;-->
+<!--&lt;!&ndash;</span>&ndash;&gt;-->
+<!--  </div>-->
+<div style="height: 200px; width: 200px;background: red"></div>
 
-<!--    </script>-->
-<!--</script>-->
-<script>
-  document.addEventListener('DOMContentLoaded', addSectionGrid, false);
-  // document.addEventListener('click', addSectionGrid, false);
-  //
-  function addSectionGrid() {
-    debugger
-    let customCategoryCard = document.getElementsByClassName('above-discovery-categories-outlet')[0];
-    if (customCategoryCard) {
-      customCategoryCard.parentElement.classList.add('list-area-section');
-    } else {
-      customCategoryCard.parentElement.classList.remove('list-area-section');
-    }
-    // let customCategoryCard = document.getElementById('list-area');
-    // let listSection = document.createElement('DIV');
-    // listSection.classList.add('list-area-section');
-    // listSection.innerHTML = customCategoryCard.innerHTML;
-    // customCategoryCard.innerHTML = "";
-    // customCategoryCard.appendChild(listSection);
-  }
 </script>
+<!--<script>-->
+<!--  // document.addEventListener('DOMContentLoaded', addSectionGrid, false);-->
+<!--  // // document.addEventListener('click', addSectionGrid, false);-->
+<!--  // //-->
+<!--  // function addSectionGrid() {-->
+<!--  //   debugger-->
+<!--  //   let customCategoryCard = document.getElementsByClassName('above-discovery-categories-outlet')[0];-->
+<!--  //   if (customCategoryCard) {-->
+<!--  //     customCategoryCard.parentElement.classList.add('list-area-section');-->
+<!--  //   } else {-->
+<!--  //     customCategoryCard.parentElement.classList.remove('list-area-section');-->
+<!--  //   }-->
+<!--  //   // let customCategoryCard = document.getElementById('list-area');-->
+<!--  //   // let listSection = document.createElement('DIV');-->
+<!--  //   // listSection.classList.add('list-area-section');-->
+<!--  //   // listSection.innerHTML = customCategoryCard.innerHTML;-->
+<!--  //   // customCategoryCard.innerHTML = "";-->
+<!--  //   // customCategoryCard.appendChild(listSection);-->
+<!--  // }-->
+<!--</script>-->
