@@ -1,83 +1,40 @@
 <div class="background-container"></div>
 
 <script type="text/x-handlebars" data-template-name="/connectors/category-box-below-each-category/foobar">
-<!--  <div class="sub-category-tag-list">-->
-<!--  {{#each this.category.subcategories as |c|}}-->
-<!--    <span class="tag">Welcome {{currentUser.username}}. Please visit <a class="nav-link " href="http://google.com" target="_blank">{{c.name}}</a>-->
-<!--    </span>-->
-<!--  {{/each}}-->
-<!--&lt;!&ndash;  <span class="tag">Welcome {{currentUser.username}}. Please visit <a class="nav-link " href="http://google.com" target="_blank">{{category.name}}</a>&ndash;&gt;-->
-<!--&lt;!&ndash;</span>&ndash;&gt;-->
-<!--  </div>-->
-
-
-
-
 
 <div class="category-custom-details">
   <div class="category-box-heading">
-          <a class="parent-box-link" href={{this.category.url}}>
-            <h3>
-              <CategoryTitleBefore @category={{this.category}} />
-              {{this.category.name}}
-            </h3>
-          </a>
+      <a class="parent-box-link" href={{this.category.url}}>
+        <h3>
+          <CategoryTitleBefore @category={{this.category}} />
+          {{this.category.name}}
+        </h3>
+      </a>
+  </div>
+  <div class="description">
+    {{html-safe category.description_excerpt}}
+  </div>
+  <div class="subcategories">
+      {{#each this.category.subcategories as |sc|}}
+        <a class="subcategory" href={{sc.url}}>
+          <span class="subcategory-image-placeholder">
+            <CdnImg @src={{sc.uploaded_logo.url}} @class="logo" @width={{sc.uploaded_logo.width}} @height={{sc.uploaded_logo.height}} @alt="" />
+          </span>
+
+          {{category-link sc hideParent="true"}}
+        {{html-safe category.description_excerpt}}
+        </a>
+        <div class="subcategory-description">
         </div>
-          <div class="description">
-            {{html-safe category.description_excerpt}}
-          </div>
-          <div class="subcategories">
-              {{#each this.category.subcategories as |sc|}}
-                <a class="subcategory" href={{sc.url}}>
-                  <span class="subcategory-image-placeholder">
-                    <CdnImg @src={{sc.uploaded_logo.url}} @class="logo" @width={{sc.uploaded_logo.width}} @height={{sc.uploaded_logo.height}} @alt="" />
-                  </span>
 
-                  {{category-link sc hideParent="true"}}
-                {{html-safe category.description_excerpt}}
+        {{#each sc.allowed_tags as |tag|}}
+                <span class="tags">
+                <a href="tags/{{tag}}">
+                {{tag}}
                 </a>
-                <div class="subcategory-description">
-                </div>
-
-                    {{sc.allowed_tags}}
-                {{#each sc.allowed_tags as |tag|}}
-                        <span class="tags">
-                        <a href="tags/{{tag}}">
-                        {{tag}}
-                        </a>
-                        </span>
-                   {{/each}}
-              {{/each}}
-            </div>
+                </span>
+           {{/each}}
+      {{/each}}
+    </div>
 </div>
-
-
-
-
-
-
-
-
-
-
 </script>
-<!--<script>-->
-<!--  // document.addEventListener('DOMContentLoaded', addSectionGrid, false);-->
-<!--  // // document.addEventListener('click', addSectionGrid, false);-->
-<!--  // //-->
-<!--  // function addSectionGrid() {-->
-<!--  //   debugger-->
-<!--  //   let customCategoryCard = document.getElementsByClassName('above-discovery-categories-outlet')[0];-->
-<!--  //   if (customCategoryCard) {-->
-<!--  //     customCategoryCard.parentElement.classList.add('list-area-section');-->
-<!--  //   } else {-->
-<!--  //     customCategoryCard.parentElement.classList.remove('list-area-section');-->
-<!--  //   }-->
-<!--  //   // let customCategoryCard = document.getElementById('list-area');-->
-<!--  //   // let listSection = document.createElement('DIV');-->
-<!--  //   // listSection.classList.add('list-area-section');-->
-<!--  //   // listSection.innerHTML = customCategoryCard.innerHTML;-->
-<!--  //   // customCategoryCard.innerHTML = "";-->
-<!--  //   // customCategoryCard.appendChild(listSection);-->
-<!--  // }-->
-<!--</script>-->
