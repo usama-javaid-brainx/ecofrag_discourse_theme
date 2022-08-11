@@ -38,7 +38,8 @@
                 <div class="subcategory-description">
                     {{html-safe category.description_excerpt}}
                 </div>
-                    {{sc}}
+                    {{sc.tags}}
+                    {{sc.allowed_tags}}
                 {{#each sc.tags as |tag|}}
                         <span class="tags">
                         <a href="tags/{{tag}}">
