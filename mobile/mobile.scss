@@ -35,10 +35,10 @@ html body.user-activity-page #main-outlet,
 html body.user-invites-page #main-outlet,
 html body.user-preferences-page #main-outlet,
 html body.staff:not(.navigation-topics) #main-outlet {
-  border-radius: 0px;
+  border-radius: 1em;
   width: calc(100% - 3em);
   background-color: var(--secondary);
-  margin-bottom: 0px;
+  margin-bottom: 50px;
 }
 
 .container.posts > .row {
