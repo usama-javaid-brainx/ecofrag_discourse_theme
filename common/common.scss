@@ -909,9 +909,12 @@ html body #main-outlet {
       margin-top: 10px;
       padding-bottom: 15px;
       border-radius: 0 !important;
-      display: flex !important;
-      flex-direction: column !important;
+      //display: flex !important;
+      //flex-direction: column !important;
       padding-left: 25px;
+
+      .subcategory-section {
+      display: flex;
 
       .subcategory-image-placeholder {
         height: 45px !important;
@@ -930,7 +933,11 @@ html body #main-outlet {
           }
         }
       }
-
+        .subcategory-description{
+          display: flex;
+          flex-direction: column;
+        }
+    }
       .badge-category-bg {
         display: none;
       }
@@ -942,11 +949,6 @@ html body #main-outlet {
           font-weight: bold;
           text-transform: capitalize;
         }
-      }
-
-      .subcategory-description{
-        display: flex;
-        flex-direction: column;
       }
       .sub-category-tag-list {
         display: flex;
