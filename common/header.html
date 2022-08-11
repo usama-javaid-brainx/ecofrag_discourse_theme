@@ -16,8 +16,8 @@
   </div>
   <div class="subcategories">
       {{#each this.category.subcategories as |sc|}}
-        <div class="subcategory">
-            <a href={{sc.url}}>
+
+            <a class="subcategory" href={{sc.url}}>
               <span class="subcategory-image-placeholder">
                 <CdnImg @src={{sc.uploaded_logo.url}} @class="logo" @width={{sc.uploaded_logo.width}} @height={{sc.uploaded_logo.height}} @alt="" />
               </span>
@@ -37,7 +37,7 @@
                   </span>
                 {{/each}}
             </div>
-        </div>
+
       {{/each}}
     </div>
 </div>
