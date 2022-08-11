@@ -710,131 +710,124 @@ html body #main-outlet {
   border-left-color: var(--primary);
 }
 
-//#list-area {
-//
-//  .custom-category-boxes-container:before {
-//    content: 'Categories';
-//    color: var(--primary);
-//    font-size: 14px;
-//    margin-bottom: 10px;
-//  }
-//
-//  .custom-category-boxes {
-//    grid-template-columns: 1fr !important;
-//
-//    .category-box {
-//      max-height: fit-content !important;
-//      position: relative;
-//    }
-//
-//    .subcategories {
-//      display: flex !important;
-//      flex-wrap: wrap;
-//      flex-direction: column;
-//
-//      .subcategory {
-//        border-bottom: 1px solid rgba(179, 180, 180, 0.3);
-//        margin-bottom: 15px;
-//        margin-top: 10px;
-//        padding-bottom: 15px;
-//        border-radius: 0 !important;
-//        display: flex !important;
-//        padding-left: 25px;
-//        align-items: center;
-//
-//        .subcategory-image-placeholder {
-//          height: 45px !important;
-//          width: 45px !important;
-//          margin-right: 20px !important;
-//
-//          .aspect-image {
-//            height: 100%;
-//            width: 100%;
-//
-//            img {
-//              height: 100%;
-//              width: 100%;
-//              border-radius: 5px;
-//              object-fit: cover;
-//            }
-//          }
-//        }
-//
-//        .badge-category-bg {
-//          display: none;
-//        }
-//
-//        .badge-category {
-//          .category-name {
-//            font-size: 19px;
-//            color: var(--primary);
-//            font-weight: bold;
-//            text-transform: capitalize;
-//          }
-//        }
-//      }
-//    }
-//
-//    a:hover {
-//      background: none !important;
-//    }
-//
-//    a {
-//      display: block !important;
-//      border-radius: 5px !important;
-//
-//      .category-box-inner {
-//        column-gap: 0 !important;
-//
-//        .category-logo {
-//          width: 8px !important;
-//          height: 100% !important;
-//
-//          .category-abbreviation {
-//            color: transparent !important;
-//          }
-//
-//          .aspect-image {
-//            display: none !important;
-//          }
-//        }
-//
-//        .category-details {
-//          align-self: baseline !important;
-//          display: none;
-//
-//          .category-box-heading {
-//            padding: 5px 25px 55px 24px !important;
-//            font-size: 20px !important;
-//            background-color: var(--quaternary);
-//          }
-//
-//          .description {
-//            position: absolute;
-//            top: 40px;
-//            left: 33px;
-//            font-size: 14px;
-//          }
-//
-//
-//          //.category-box-heading {
-//          //  padding: 5px 25px !important;
-//          //  font-size: 20px !important;
-//          //  background-color: var(--highlight) !important;
-//          //}
-//          //
-//          //.description {
-//          //  display: none !important;
-//          //}
-//        }
-//      }
-//
-//      h3 {
-//        font-family: 'Quantico', sans-serif !important;
-//      }
-//    }
-//  }
-//}
+#list-area {
+
+  .custom-category-boxes {
+    grid-template-columns: 1fr !important;
+
+    .category-box {
+      max-height: fit-content !important;
+      position: relative;
+    }
+
+    //.subcategories {
+    //  display: flex !important;
+    //  flex-wrap: wrap;
+    //  flex-direction: column;
+    //
+    //  .subcategory {
+    //    border-bottom: 1px solid rgba(179, 180, 180, 0.3);
+    //    margin-bottom: 15px;
+    //    margin-top: 10px;
+    //    padding-bottom: 15px;
+    //    border-radius: 0 !important;
+    //    display: flex !important;
+    //    padding-left: 25px;
+    //    align-items: center;
+    //
+    //    .subcategory-image-placeholder {
+    //      height: 45px !important;
+    //      width: 45px !important;
+    //      margin-right: 20px !important;
+    //
+    //      .aspect-image {
+    //        height: 100%;
+    //        width: 100%;
+    //
+    //        img {
+    //          height: 100%;
+    //          width: 100%;
+    //          border-radius: 5px;
+    //          object-fit: cover;
+    //        }
+    //      }
+    //    }
+    //
+    //    .badge-category-bg {
+    //      display: none;
+    //    }
+    //
+    //    .badge-category {
+    //      .category-name {
+    //        font-size: 19px;
+    //        color: var(--primary);
+    //        font-weight: bold;
+    //        text-transform: capitalize;
+    //      }
+    //    }
+    //  }
+    //}
+
+    a:hover {
+      background: none !important;
+    }
+
+    a {
+      display: block !important;
+      border-radius: 5px !important;
+
+      .category-box-inner {
+        column-gap: 0 !important;
+
+        .category-logo {
+          width: 8px !important;
+          height: 100% !important;
+
+          .category-abbreviation {
+            color: transparent !important;
+          }
+
+          .aspect-image {
+            display: none !important;
+          }
+        }
+
+        //.category-details {
+        //  align-self: baseline !important;
+        //  display: none;
+        //
+        //  .category-box-heading {
+        //    padding: 5px 25px 55px 24px !important;
+        //    font-size: 20px !important;
+        //    background-color: var(--quaternary);
+        //  }
+        //
+        //  .description {
+        //    position: absolute;
+        //    top: 40px;
+        //    left: 33px;
+        //    font-size: 14px;
+        //  }
+
+
+          //.category-box-heading {
+          //  padding: 5px 25px !important;
+          //  font-size: 20px !important;
+          //  background-color: var(--highlight) !important;
+          //}
+          //
+          //.description {
+          //  display: none !important;
+          //}
+        //}
+      }
+
+      h3 {
+        font-family: 'Quantico', sans-serif !important;
+      }
+    }
+  }
+}
 
 .navigation-container {
   border-bottom: 0 !important;
