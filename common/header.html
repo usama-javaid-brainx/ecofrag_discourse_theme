@@ -9,7 +9,38 @@
 <!--&lt;!&ndash;  <span class="tag">Welcome {{currentUser.username}}. Please visit <a class="nav-link " href="http://google.com" target="_blank">{{category.name}}</a>&ndash;&gt;-->
 <!--&lt;!&ndash;</span>&ndash;&gt;-->
 <!--  </div>-->
-<div style="height: 200px; width: 200px;background: red"></div>
+
+
+
+
+
+<div class="category-custom-details">
+  <div class="category-box-heading">
+          <a class="parent-box-link" href={{c.url}}>
+            <h3>
+              <CategoryTitleBefore @category={{c}} />
+              {{#if c.read_restricted}}
+                {{d-icon this.lockIcon}}
+              {{/if}}
+              {{c.name}}
+            </h3>
+          </a>
+        </div>
+
+        {{#unless c.isMuted}}
+          <div class="description">
+            {{html-safe c.description_excerpt}}
+          </div>
+</div>
+
+
+
+
+
+
+
+
+
 
 </script>
 <!--<script>-->

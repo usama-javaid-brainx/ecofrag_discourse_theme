@@ -801,7 +801,7 @@ html body #main-outlet {
 
         .category-details {
           align-self: baseline !important;
-
+          display: none;
 
           .category-box-heading {
             padding: 5px 25px 55px 24px !important;
@@ -907,4 +907,16 @@ html body #main-outlet {
   display: grid;
   grid-template-columns: 1fr 1fr !important;
   grid-gap: 20px !important;
+}
+.category-custom-details{
+  align-self: baseline !important;
+  .category-box-heading {
+    padding: 5px 25px !important;
+    font-size: 20px !important;
+    background-color: var(--highlight) !important;
+  }
+
+  .description {
+    display: none !important;
+  }
 }
