@@ -948,21 +948,22 @@ html body #main-outlet {
         display: flex;
         flex-direction: column;
       }
-    }
+      .sub-category-tag-list {
+        display: flex;
+        top: 80px;
+        left: 100px;
 
-    .sub-category-tag-list {
-      display: flex;
-      top: 80px;
-      left: 100px;
-
-      .tag {
-        color: #ffffff;
-        background-color: #23262F;
-        padding: 3px 10px;
-        margin-right: 10px;
-        border-radius: 5px;
+        .tag {
+          color: #ffffff;
+          background-color: #23262F;
+          padding: 3px 10px;
+          margin-right: 10px;
+          border-radius: 5px;
+        }
       }
     }
+
+
   }
 
 
