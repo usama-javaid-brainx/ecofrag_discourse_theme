@@ -710,7 +710,7 @@ html body #main-outlet {
   border-left-color: var(--primary);
 }
 
-//#list-area {
+#list-area {
 
   .custom-category-boxes-container:before {
     content: 'Categories';
@@ -834,7 +834,7 @@ html body #main-outlet {
       }
     }
   }
-//}
+}
 
 .navigation-container {
   border-bottom: 0 !important;
