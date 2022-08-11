@@ -38,13 +38,13 @@
                 <div class="subcategory-description">
                     {{html-safe category.description_excerpt}}
                 </div>
-            {{#each sc.allowed_tags as |tag|}}
-                    <span class="tags">
-                    <a href="tags/{{tag}}">
-                    {{tag}}
-                    </a>
-                    </span>
-               {{/each}}
+                {{#each sc.tags as |tag|}}
+                        <span class="tags">
+                        <a href="tags/{{tag}}">
+                        {{tag}}
+                        </a>
+                        </span>
+                   {{/each}}
               {{/each}}
             </div>
 </div>
