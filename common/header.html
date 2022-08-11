@@ -16,20 +16,17 @@
 
 <div class="category-custom-details">
   <div class="category-box-heading">
-          <a class="parent-box-link" href={{c.url}}>
+          <a class="parent-box-link" href={{this.category.url}}>
             <h3>
-              <CategoryTitleBefore @category={{c}} />
-              {{#if c.read_restricted}}
-                {{d-icon this.lockIcon}}
-              {{/if}}
-              {{c.name}}
+              <CategoryTitleBefore @category={{this.category}} />
+
+              {{this.category.name}}
             </h3>
           </a>
         </div>
 
-        {{#unless c.isMuted}}
           <div class="description">
-            {{html-safe c.description_excerpt}}
+            {{html-safe category.description_excerpt}}
           </div>
 </div>
 
