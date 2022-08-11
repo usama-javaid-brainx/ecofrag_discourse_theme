@@ -19,15 +19,34 @@
           <a class="parent-box-link" href={{this.category.url}}>
             <h3>
               <CategoryTitleBefore @category={{this.category}} />
-
               {{this.category.name}}
             </h3>
           </a>
         </div>
-
           <div class="description">
             {{html-safe category.description_excerpt}}
           </div>
+          <div class="subcategories">
+              {{#each this.category.subcategories as |sc|}}
+                <a class="subcategory" href={{sc.url}}>
+                  <span class="subcategory-image-placeholder">
+                    <CdnImg @src={{sc.uploaded_logo.url}} @class="logo" @width={{sc.uploaded_logo.width}} @height={{sc.uploaded_logo.height}} @alt="" />
+                  </span>
+
+                  {{category-link sc hideParent="true"}}
+                </a>
+                <div class="subcategory-description">
+                    {{html-safe category.description_excerpt}}
+                </div>
+            {{#each sc.allowed_tags as |tag|}}
+                    <span class="tags">
+                    <a href="tags/{{tag}}">
+                    {{tag}}
+                    </a>
+                    </span>
+               {{/each}}
+              {{/each}}
+            </div>
 </div>
 
 
