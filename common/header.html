@@ -24,15 +24,15 @@
                       </div>
                       <div class='subcategory-description'>
                         {{category-link sc hideParent="true"}}
-                        <h5>
+                        <div class="text">
                             {{html-safe category.description_excerpt}}
-                        </h5>
+                        </div>
                       </div>
                 </div>
             </a>
             <div class="sub-category-tag-list">
                 {{#each sc.allowed_tags as |tag|}}
-                  <span class="tags">
+                  <span class="tag">
                     <a href="tags/{{tag}}">
                         {{tag}}
                     </a>
