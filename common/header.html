@@ -14,16 +14,22 @@
 <!--    </script>-->
 <!--</script>-->
 <script>
-  document.addEventListener('DOMContentLoaded', addSectionGrid,false);
-  document.addEventListener('click', addSectionGrid,false);
-
+  document.addEventListener('DOMContentLoaded', addSectionGrid, false);
+  // document.addEventListener('click', addSectionGrid, false);
+  //
   function addSectionGrid() {
     debugger
-    let customCategoryCard = document.getElementsByClassName('above-discovery-categories-outlet')[0];
-    if (customCategoryCard) {
-      customCategoryCard.parentElement.classList.add('list-area-section');
-    } else {
-      customCategoryCard.parentElement.classList.remove('list-area-section');
-    }
+    // let customCategoryCard = document.getElementsByClassName('above-discovery-categories-outlet')[0];
+    // if (customCategoryCard) {
+    //   customCategoryCard.parentElement.classList.add('list-area-section');
+    // } else {
+    //   customCategoryCard.parentElement.classList.remove('list-area-section');
+    // }
+    let customCategoryCard = document.getElementsById('list-area');
+    let listSection = document.createElement('DIV');
+    listSection.classList.add('list-area-section');
+    listSection.innerHTML = customCategoryCard.innerHTML;
+    customCategoryCard.innerHTML = "";
+    customCategoryCard.appendChild(listSection);
   }
 </script>

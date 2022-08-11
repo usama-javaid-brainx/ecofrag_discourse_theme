@@ -711,8 +711,6 @@ html body #main-outlet {
 }
 
 #list-area {
-  display: grid;
-  grid-template-columns: 1fr;
 
   .custom-category-boxes-container:before {
     content: 'Categories';
@@ -906,6 +904,7 @@ html body #main-outlet {
 }
 
 .list-area-section {
+  display: grid;
   grid-template-columns: 1fr 1fr !important;
   grid-gap: 20px !important;
 }
