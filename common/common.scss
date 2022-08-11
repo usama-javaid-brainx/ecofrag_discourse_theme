@@ -908,8 +908,9 @@ html body #main-outlet {
       margin-bottom: 15px;
       margin-top: 10px;
       padding-bottom: 15px;
+      padding-right: 15px;
       border-radius: 0 !important;
-      //display: flex !important;
+      display: block !important;
       //flex-direction: column !important;
       padding-left: 25px;
 
@@ -917,8 +918,8 @@ html body #main-outlet {
       display: flex;
 
       .subcategory-image-placeholder {
-        height: 45px !important;
-        width: 45px !important;
+        height: 50px !important;
+        width: 50px !important;
         margin-right: 20px !important;
 
         .aspect-image {
@@ -936,6 +937,9 @@ html body #main-outlet {
         .subcategory-description{
           display: flex;
           flex-direction: column;
+        h5{
+          color: var(--primary) !important;
+        }
         }
     }
       .badge-category-bg {
@@ -952,13 +956,12 @@ html body #main-outlet {
       }
       .sub-category-tag-list {
         display: flex;
-        top: 80px;
-        left: 100px;
-
+        margin-left: 65px;
+flex-wrap: wrap;
         .tag {
-          color: #ffffff;
+          color: #ffffff !important;
           background-color: #23262F;
-          padding: 3px 10px;
+          padding: 5px 12px;
           margin-right: 10px;
           border-radius: 5px;
         }
