@@ -792,9 +792,9 @@ html body #main-outlet {
           }
         }
 
-        //.category-details {
+        .category-details {
         //  align-self: baseline !important;
-        //  display: none;
+          display: none;
         //
         //  .category-box-heading {
         //    padding: 5px 25px 55px 24px !important;
@@ -819,7 +819,7 @@ html body #main-outlet {
           //.description {
           //  display: none !important;
           //}
-        //}
+        }
       }
 
       h3 {
