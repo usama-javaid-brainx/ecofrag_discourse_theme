@@ -15,35 +15,32 @@
     {{html-safe category.description_excerpt}}
   </div>
   <div class="subcategories">
-      {{#each this.category.subcategories as |sc|}}
-        <div class="subcategory">
-            <a href={{sc.url}}>
-                <div class= "subcategory-section">
-                     <div class="subcategory-image-placeholder">
-                        <CdnImg @src={{sc.uploaded_logo.url}} @class="logo" @width={{sc.uploaded_logo.width}} @height={{sc.uploaded_logo.height}} @alt="" />
-                      </div>
-                      <div class='subcategory-description'>
-                        {{category-link sc hideParent="true"}}
-                        <div class="text">
-                            {{html-safe sc.description_excerpt}}
-                        </div>
-                      </div>
-                </div>
-            </a>
-            <div class="sub-category-tag-list">
-                {{#each sc.allowed_tags as |tag|}}
-                  <span class="tag">
-                    <a href="tags/{{tag}}">
-                        {{tag}}
-                    </a>
-                  </span>
-                {{/each}}
+    {{#each this.category.subcategories as |sc|}}
+      <div class="subcategory">
+        <a href={{sc.url}}>
+            <div class= "subcategory-section">
+                 <div class="subcategory-image-placeholder">
+                    <CdnImg @src={{sc.uploaded_logo.url}} @class="logo" @width={{sc.uploaded_logo.width}} @height={{sc.uploaded_logo.height}} @alt="" />
+                  </div>
+                  <div class='subcategory-description'>
+                    {{category-link sc hideParent="true"}}
+                    <div class="text">
+                        {{html-safe sc.description_excerpt}}
+                    </div>
+                  </div>
             </div>
-
+        </a>
+        <div class="sub-category-tag-list">
+            {{#each sc.allowed_tags as |tag|}}
+              <span class="tag">
+                <a href="tags/{{tag}}">
+                    {{tag}}
+                </a>
+              </span>
+            {{/each}}
         </div>
-
-
-      {{/each}}
-    </div>
+      </div>
+    {{/each}}
+  </div>
 </div>
 </script>
