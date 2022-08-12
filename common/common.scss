@@ -929,11 +929,23 @@ html body #main-outlet {
     max-height: 100% !important;
 
     .category-box-inner {
-      height: 100%;
-      width: 10px;
       grid-template-columns: 0fr 1fr;
       column-gap: 10px;
       background-color: var(--header_background);
+
+      .category-logo {
+        height: 100%;
+        width: 10px;
+      }
+
+      .category-box-heading {
+        align-self: baseline;
+
+        h3 {
+          font-size: 1.5em;
+          font-family: 'Quantico', sans-serif !important;
+        }
+      }
 
       .category-logo {
         .aspect-image {
@@ -941,7 +953,7 @@ html body #main-outlet {
         }
       }
 
-      .categories-details {
+      .category-details {
         .description {
           display: block !important;
         }
