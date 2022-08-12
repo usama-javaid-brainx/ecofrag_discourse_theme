@@ -852,6 +852,7 @@ html body #main-outlet {
           height: 50px !important;
           width: 50px !important;
           margin-right: 20px !important;
+          flex-shrink: 0;
 
           .aspect-image {
             height: 100%;
@@ -876,6 +877,11 @@ html body #main-outlet {
             margin-top: 10px;
             margin-bottom: 10px;
             max-width: 1000px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 3;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
           }
         }
       }
@@ -918,6 +924,7 @@ html body #main-outlet {
 #header-list-area {
   a {
     border-radius: 7px !important;
+    height: 100%;
   }
 
   .category-custom-details {
@@ -930,7 +937,7 @@ html body #main-outlet {
 
     .category-box-inner {
       grid-template-columns: 0fr 1fr;
-      column-gap: 10px;
+      column-gap: 20px;
       background-color: var(--header_background);
 
       .category-logo {
@@ -939,7 +946,8 @@ html body #main-outlet {
       }
 
       .category-box-heading {
-        align-self: baseline;
+        align-self: baseline !important;
+        padding-top: 15px;
 
         h3 {
           font-size: 1.5em;
