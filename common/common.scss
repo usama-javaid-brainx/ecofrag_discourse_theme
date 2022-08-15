@@ -955,7 +955,7 @@ html body #main-outlet {
           height: 50px;
           object-fit: cover;
           position: absolute;
-          left: 47%;
+          left: 46%;
           top: 15px;
 
           img {
@@ -975,7 +975,7 @@ html body #main-outlet {
       }
 
       .category-details {
-        padding-top: 55px;
+        padding-top: 55px !important;
         text-align: center;
         margin-left: -15px;
 
@@ -1009,7 +1009,7 @@ html body #main-outlet {
   }
 }
 
-.in-focus, input:focus, textarea:focus, .category-input {
+.in-focus, input:focus, textarea:focus, .select-kit {
   border: 1px solid #F48C06 !important;
   outline: 1px solid #F48C06 !important;
   outline-offset: 0 !important;
