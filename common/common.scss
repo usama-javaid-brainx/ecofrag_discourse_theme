@@ -945,6 +945,11 @@ html body #main-outlet {
       .category-logo {
         height: 100%;
         width: 10px;
+
+        .category-abbreviation {
+          display: none;
+        }
+
         .aspect-image {
           width: 50px;
           height: 50px;
@@ -952,6 +957,10 @@ html body #main-outlet {
           position: absolute;
           left: 47%;
           top: 15px;
+
+          img {
+            border-radius: 5px;
+          }
         }
       }
 
@@ -969,6 +978,7 @@ html body #main-outlet {
         padding-top: 55px;
         text-align: center;
         margin-left: -15px;
+
         .description {
           display: block !important;
           text-align: center;
