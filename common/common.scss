@@ -973,6 +973,7 @@ html body #main-outlet {
           display: block !important;
           text-align: center;
           margin-top: 10px;
+          margin-bottom: 10px;
         }
       }
     }
@@ -981,4 +982,5 @@ html body #main-outlet {
 
 .topic-list .views {
   display: flex !important;
+  justify-content: center;
 }
