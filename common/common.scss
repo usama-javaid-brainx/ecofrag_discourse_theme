@@ -1015,3 +1015,9 @@ html body #main-outlet {
   outline-offset: 0 !important;
   border-radius: 5px;
 }
+
+.topic-list-header {
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}
