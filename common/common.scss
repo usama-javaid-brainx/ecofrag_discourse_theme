@@ -993,3 +993,23 @@ html body #main-outlet {
   display: flex !important;
   justify-content: center;
 }
+
+.category-heading {
+  .category-logo {
+    height: 75px;
+    width: 75px;
+
+    img {
+      border-radius: 5px;
+    }
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+.in-focus{
+  border: 1px solid #F48C06 !important;
+  outline: 1px solid #F48C06 !important;
+  outline-offset: 0 !important;
+}
