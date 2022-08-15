@@ -1018,6 +1018,11 @@ html body #main-outlet {
 
 .topic-list-header {
   @media screen and (max-width: 600px) {
-    display: none;
+    display: none !important;
+  }
+}
+.topic-list-item {
+  @media screen and (max-width: 600px) {
+    padding: 0 !important;
   }
 }
