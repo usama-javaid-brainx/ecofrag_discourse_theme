@@ -939,10 +939,18 @@ html body #main-outlet {
       grid-template-columns: 0fr 1fr;
       column-gap: 20px;
       background-color: var(--header_background);
+      height: 100%;
+      position: relative;
 
       .category-logo {
         height: 100%;
         width: 10px;
+        .aspect-image {
+          display: none;
+          position: absolute;
+          left: 47%;
+          top: 15px;
+        }
       }
 
       .category-box-heading {
@@ -955,17 +963,17 @@ html body #main-outlet {
         }
       }
 
-      .category-logo {
-        .aspect-image {
-          display: none;
-        }
-      }
-
       .category-details {
+        padding-top: 55px;
+        text-align: center;
         .description {
           display: block !important;
         }
       }
     }
   }
+}
+
+.topic-list .views {
+  display: block !important;
 }
