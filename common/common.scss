@@ -1008,7 +1008,8 @@ html body #main-outlet {
     font-size: 20px;
   }
 }
-.in-focus{
+
+.in-focus, input:focus, textarea:focus {
   border: 1px solid #F48C06 !important;
   outline: 1px solid #F48C06 !important;
   outline-offset: 0 !important;
