@@ -1009,7 +1009,7 @@ html body #main-outlet {
   }
 }
 
-.in-focus, input:focus, textarea:focus, .single-select-header {
+.in-focus, input:focus, textarea:focus, .is-expanded {
   border: 1px solid #F48C06 !important;
   outline: 1px solid #F48C06 !important;
   outline-offset: 0 !important;
