@@ -793,11 +793,8 @@ html body #main-outlet {
   }
 }
 
-.d-header-icons:hover {
-  li {
-    background-color: var(--primary-low) !important;
-    border-radius: 50px !important;
-  }
+.dark-light-toggle:hover {
+  background-color: var(--primary-low);
 }
 
 .badge-notification {
