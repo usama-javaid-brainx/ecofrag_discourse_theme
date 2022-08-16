@@ -824,6 +824,8 @@ html body #main-outlet {
 
 .category-custom-details {
   align-self: baseline !important;
+  max-width: calc(var(--d-max-width) - 158px);
+  width: 100%;
 
   .category-box-heading {
     padding: 5px 25px !important;
@@ -875,6 +877,12 @@ html body #main-outlet {
         .subcategory-description {
           display: flex;
           flex-direction: column;
+          width: 65vw;
+
+          .badge-wrapper {
+            white-space: pre-wrap !important;
+            word-break: break-word !important;
+          }
 
           .text {
             color: var(--primary) !important;
