@@ -286,7 +286,7 @@ html {
     width: 100vw;
   }
 
-  .btn-primary, .btn-default, .btn-default:hover {
+  .btn-primary, .btn-default {
     background: linear-gradient(to right, #FFBA08, #F48C06) !important;
     padding: 8px 25px !important;
     font-size: 15px;
@@ -295,7 +295,7 @@ html {
     font-weight: 600;
 
     .d-icon {
-      color: #ffffff;
+      color: #ffffff !important;
     }
   }
 }
@@ -655,7 +655,7 @@ html body #main-outlet {
 }
 
 .nav-item_categories {
-  display: none;
+  display: none !important;
 }
 
 .topic-map {
@@ -793,6 +793,12 @@ html body #main-outlet {
   }
 }
 
+.d-header-icons:hover {
+  li {
+    background-color: var(--primary-low) !important;
+    border-radius: 50px !important;
+  }
+}
 
 .badge-notification {
   color: #ffffff !important;
