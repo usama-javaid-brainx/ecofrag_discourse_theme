@@ -478,7 +478,7 @@ html body #main-outlet {
         align-items: center;
       }
 
-      .topic-list-data.views {
+      .topic-list-data.views.sortable {
         width: 15%;
         order: 4;
         display: flex;
@@ -783,9 +783,9 @@ html body #main-outlet {
     width: 35px;
   }
 
-  .switch:hover {
-    background-color: var(--primary-low);
-  }
+  //.switch:hover {
+  //  background-color: var(--primary-low);
+  //}
 
   .d-icon-sun {
     display: block !important;
@@ -798,7 +798,7 @@ html body #main-outlet {
 }
 
 .dark-light-toggle:hover {
-  background-color: var(--primary-low);
+  background-color: var(--primary-low) !important;
 }
 
 .badge-notification {
