@@ -783,6 +783,10 @@ html body #main-outlet {
     width: 35px;
   }
 
+  .switch:hover {
+    background-color: var(--primary-low);
+  }
+
   .d-icon-sun {
     display: block !important;
     color: var(--primary) !important;
