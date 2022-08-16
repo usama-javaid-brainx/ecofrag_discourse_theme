@@ -1040,3 +1040,9 @@ html body #main-outlet {
     padding: 0 !important;
   }
 }
+
+.search-container {
+  .search-header, .search-bar, .search-filters, .search-advanced-filters {
+    background: var(--primary) !important;
+  }
+}
