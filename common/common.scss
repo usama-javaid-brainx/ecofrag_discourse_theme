@@ -478,7 +478,7 @@ html body #main-outlet {
         align-items: center;
       }
 
-      .topic-list-data.views.sortable {
+      .topic-list-data.views {
         width: 15%;
         order: 4;
         display: flex;
@@ -783,10 +783,6 @@ html body #main-outlet {
     width: 35px;
   }
 
-  //.switch:hover {
-  //  background-color: var(--primary-low);
-  //}
-
   .d-icon-sun {
     display: block !important;
     color: var(--primary) !important;
@@ -998,10 +994,10 @@ html body #main-outlet {
   }
 }
 
-.topic-list .views {
-  display: flex !important;
-  justify-content: center;
-}
+//.topic-list .views {
+//  display: flex !important;
+//  justify-content: center;
+//}
 
 .category-heading {
   .category-logo {
