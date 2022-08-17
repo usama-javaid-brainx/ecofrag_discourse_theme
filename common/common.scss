@@ -300,6 +300,10 @@ html {
   }
 }
 
+.btn-primary:hover, .btn-default:hover {
+  box-shadow: 0 9px 28px -9px rgb(244 140 6);
+}
+
 html body #main-outlet {
   margin-top: 175px;
   margin-bottom: 50px;
