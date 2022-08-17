@@ -704,6 +704,10 @@ html body #main-outlet {
       color: var(--primary) !important;
     }
   }
+
+  .btn-default:hover {
+    box-shadow: 0 9px 28px -9px rgb(0 0 0 / 30%);
+  }
 }
 
 .widget-component-connector {
