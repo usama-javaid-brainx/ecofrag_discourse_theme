@@ -1092,10 +1092,8 @@ html body #main-outlet {
 }
 
 .topic-list {
-  .main-link {
-    .focused {
-      box-shadow: none !important;
-      border: none !important;
-    }
+  .main-link.focused {
+    box-shadow: none !important;
+    border: none !important;
   }
 }
