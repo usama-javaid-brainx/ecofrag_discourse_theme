@@ -373,6 +373,7 @@ html body #main-outlet {
   border-spacing: 0 0.25em;
   display: contents;
 
+
   .topic-list-header {
     tr {
       display: flex;
@@ -509,10 +510,6 @@ html body #main-outlet {
   justify-content: center;
   align-content: center;
   align-items: center;
-
-  .focused {
-    box-shadow: none !important;
-  }
 
   .avatar {
     margin-right: 0;
@@ -656,7 +653,15 @@ html body #main-outlet {
 
 .nav-item_latest {
   order: 1;
-  margin-left: -12px;
+
+  a {
+    margin-left: -20px;
+  }
+
+  a.active {
+    margin-left: -12px;
+  }
+
 }
 
 .nav-item_unread {
@@ -1074,12 +1079,23 @@ html body #main-outlet {
     display: inline-block;
   }
 }
-.period-chooser-header{
-  .selected-name{
+
+.period-chooser-header {
+  .selected-name {
     font-size: 16px;
   }
-  .d-icon{
+
+  .d-icon {
     height: 0.7em;
     width: 0.7em;
+  }
+}
+
+.topic-list {
+  .main-link {
+    .focused {
+      box-shadow: none !important;
+      border: none !important;
+    }
   }
 }
