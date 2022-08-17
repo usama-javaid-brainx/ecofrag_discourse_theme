@@ -511,7 +511,7 @@ html body #main-outlet {
   align-items: center;
 
   .focused {
-    border: none !important;
+    box-shadow: none !important;
   }
 
   .avatar {
@@ -656,6 +656,7 @@ html body #main-outlet {
 
 .nav-item_latest {
   order: 1;
+  margin-left: -12px;
 }
 
 .nav-item_unread {
@@ -907,6 +908,9 @@ html body #main-outlet {
             -webkit-line-clamp: 3;
             display: -webkit-box;
             -webkit-box-orient: vertical;
+            @media screen and (max-width: 480px) {
+              max-width: 50vw;
+            }
           }
         }
       }
@@ -1061,12 +1065,21 @@ html body #main-outlet {
 
 .input-group {
   .alt-placeholder {
-    top: 13px !important;
+    top: 13px;
   }
 }
 
 .suggested-topics-message {
   .badge-wrapper {
     display: inline-block;
+  }
+}
+.period-chooser-header{
+  .selected-name{
+    font-size: 16px;
+  }
+  .d-icon{
+    height: 0.7em;
+    width: 0.7em;
   }
 }
