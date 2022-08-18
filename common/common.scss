@@ -1069,12 +1069,12 @@ html body #main-outlet {
 }
 
 .input-group {
-  input.value-entered + label.alt-placeholder {
+  input:focus + label.alt-placeholder, input.value-entered + label.alt-placeholder {
     margin-top: 0;
   }
 
   .alt-placeholder {
-    margin-top: 5px;
+    margin-top: 3px;
   }
 }
 
