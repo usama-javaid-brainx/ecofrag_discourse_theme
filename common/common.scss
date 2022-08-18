@@ -1069,8 +1069,14 @@ html body #main-outlet {
 }
 
 .input-group {
+  .input:focus {
+    .alt-placeholder {
+      top: -8px !important;
+    }
+  }
+
   .alt-placeholder {
-    top: 13px;
+    top: 13px !important;
   }
 }
 
